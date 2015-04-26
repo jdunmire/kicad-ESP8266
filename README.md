@@ -56,7 +56,7 @@ License
 -------
 Copyright 2015 J.Dunmire
 
-Contact: jedunmire<plus>kicad-ESP8266<at>gmail<dot>com
+Contact: jedunmire PLUS kicad-ESP8266 AT gmail DOT com
 
 This file is part of kicad-ESP8266. 
 
