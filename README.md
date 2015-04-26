@@ -55,8 +55,10 @@ Libraries, `pcbnew:Preferences->Footprint Libraries Wizard`.
 License
 -------
 Copyright 2015 J.Dunmire
-jedunmire<plus>kicad-ESP8266<at>gmail<dot>com
-This file is part of the kicad-ESP8266. 
+
+Contact: jedunmire<plus>kicad-ESP8266<at>gmail<dot>com
+
+This file is part of kicad-ESP8266. 
 
 kicad-ESP8266 is licensed under the Creative Commons Attribution-ShareAlike
 4.0 International License. To view a copy of this license visit
