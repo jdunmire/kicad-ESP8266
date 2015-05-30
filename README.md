@@ -1,8 +1,9 @@
 kicad-ESP8266 - a library for KiCAD
 =====================================
-This project has both schematic symbols and footprints for ESP8266 based
-modules. It is a work-in-progress. Additions and corrections are
-welcome. Enter a pull request or file an issue on GitHub.
+This project has both schematic symbols, footprints, and 3d models for
+ESP8266 based modules. It is a work-in-progress. Additions and
+corrections are welcome. Enter a pull request or file an issue on
+GitHub.
 
 The present modules are:
 
@@ -15,17 +16,19 @@ The present modules are:
   * ESP-12  - This is includes an alias part, ESP-07v2, that is suitable
               for the 16 pin variant of the ESP-07. Note that there is a 14
               pin version of the ESP-07 that has different signals and
-              pinout. The footprint for the ESP-12 (and ESP-07v2) uses
-              surface mount pads. The pads are are 2mm spacing.
+              pinout. The footprint for the ESP-12 (and ESP-07v2)
+              elongated through-hole pads to match those modules.
 
   * ESP-201 - This is a 26 pin module with pins on 0.1 inch spacing. I
               could not find any official measurements for the pin
               locations so the footprint was created from empirical
               measurements on the unit I have.
 
+There are 3d models for the ESP-12 and the ESP-07v2.
+
 WARNINGS
 ---------
-  1. The symbols and footprints have not been tested. They are
+  1. The symbols, footprints, and 3d models have not been tested. They are
      based on published images and measurements on individual samples.
 
   2. The `.dcm` file contains HTML links to information on sites I used
@@ -39,17 +42,62 @@ WARNINGS
 
 Use
 ---
-Clone this archive to a convienient location on your computer. These are
-the commands I use on Linux to create a copy in
-`~/kicad/libraries/kicad-ESP8266`:
+ 1. Clone this archive to a convienient location on your computer. These are
+    the commands I use on Linux to create a copy in
+    `~/kicad/libraries/kicad-ESP8266`:
 
-    mkdir -p ~/kicad/libraries/
-    cd ~/kicad/libraries/
-    git clone 
+        mkdir -p ~/kicad/libraries/
+        cd ~/kicad/libraries/
+        git clone 
 
-Then add `ESP8266.lib` to the Component Libraries,
-`eeschema:Preferences->Component Libraries->Add`, and the Footprint
-Libraries, `pcbnew:Preferences->Footprint Libraries Wizard`.
+ 2. Add `ESP8266.lib` to the Component Libraries:
+
+        eeschema:Preferences->Component Libraries->Add
+
+ 3. Add `ESP8266.pretty` to the Footprint Libraries:
+
+        pcbnew:Preferences->Footprint Libraries Wizard
+
+ 4. To make the 3d models usable, add the location from step #1 to list
+    of configured paths as `ESPLIB`. Use a full path. Continuing with
+    the example step #1:
+
+        kicad:Preferences->Configure Paths->Add
+
+            Name: ESPLIB
+            Path: /home/<your_login_name>/kicad/libraries/kicad-ESP8266
+
+
+3D Models
+---------
+The 3D models were built using [OpenSCAD][http://www.openscad.org/] and
+then colored in [Wings3D][http://www.wings3d.com/] to produce the VRML
+(`.wrl`) format for KiCAD. Wings3D requires a binary STEP format, but
+OpenSCAD writes an ASCII version.
+[meshconv][http://www.cs.princeton.edu/~min/meshconv/] will convert the
+ASCII format to a binary format.
+
+Here is the workflow I used:
+
+ 1. Use OpenScad to build the model. Export the model as STL.
+ 2. Use `meshconv` to translate the file to binary.
+
+     $ meshconv -c stl <STL-FILE-FROM-OpenSCAD> -o <FILENAME>
+
+ 3. Now open Wings3d and import the the `FILENAME.stl` as a
+ _StereoLithography Binary File (*.stl)_.
+
+ 4. Assign colors.
+
+ 5. Export as _VRML 2.0 File (*.wrl)_
+
+This repository includes all the intermediate files:
+
+  * `.scad` - OpenSCAD model
+  * `.stl` - OpenSCAD STL
+  * `_4wings.stl` - STL file converted by `meshconv`
+  * `.wings` - Wings3D model
+  * `.wrl` - VRML model for KiCAD
 
 
 License
