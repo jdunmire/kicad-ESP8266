@@ -24,6 +24,10 @@ The present modules are:
               locations so the footprint was created from empirical
               measurements on the unit I have.
 
+  * ESP-12E - This is for the 22 pin variant of the ESP-12. Though all the 
+              esp-12 signals are in the same place on ESP-12E, pin numbers
+              have changed.
+
 There are 3d models for the ESP-12 and the ESP-07v2.
 
 WARNINGS
