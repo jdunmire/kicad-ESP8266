@@ -19,6 +19,12 @@ F http://www.esp8266.com/viewtopic.php?f=13&t=605&start=30
 F http://l0l.org.uk/2014/12/esp8266-modules-hardware-guide-gotta-catch-em-all/
 $ENDCMP
 #
+$CMP ESP-12E
+D ESP8622 ESP-12E module, 22 pins, 2mm, PCB antenna
+K MODULE ESP8266 ESP-8266
+F http://l0l.org.uk/2014/12/esp8266-modules-hardware-guide-gotta-catch-em-all/
+$ENDCMP
+#
 $CMP ESP-201
 D ESP8622 ESP-201 module, 26 pins, 0.1 inch
 K MODULE ESP8266 ESP-8266
