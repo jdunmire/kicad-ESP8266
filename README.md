@@ -74,11 +74,11 @@ Use
 
 3D Models
 ---------
-The 3D models were built using [OpenSCAD][http://www.openscad.org/] and
-then colored in [Wings3D][http://www.wings3d.com/] to produce the VRML
+The 3D models were built using [OpenSCAD](http://www.openscad.org/) and
+then colored in [Wings3D](http://www.wings3d.com/) to produce the VRML
 (`.wrl`) format for KiCAD. Wings3D requires a binary STEP format, but
 OpenSCAD writes an ASCII version.
-[meshconv][http://www.cs.princeton.edu/~min/meshconv/] will convert the
+[meshconv](http://www.cs.princeton.edu/~min/meshconv/) will convert the
 ASCII format to a binary format.
 
 Here is the workflow I used:
