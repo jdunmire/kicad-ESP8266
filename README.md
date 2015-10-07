@@ -46,7 +46,7 @@ WARNINGS
 
 Use
 ---
- 1. Clone this archive to a convienient location on your computer. These are
+ 1. Clone this archive to a convenient location on your computer. These are
     the commands I use on Linux to create a copy in
     `~/kicad/libraries/kicad-ESP8266`:
 
