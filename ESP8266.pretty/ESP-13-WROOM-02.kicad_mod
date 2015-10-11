@@ -40,7 +40,7 @@
   (pad 18 smd oval (at 18 0) (size 2 0.9) (layers F.Cu F.Paste F.Mask))
   (model ${ESPLIB}/ESP8266.3dshapes/ESP-13-wroom-02.wrl
     (at (xyz 0 0 0))
-    (scale (xyz 1 1 1))
+    (scale (xyz 0.3937 0.3937 0.3937))
     (rotate (xyz 0 0 0))
   )
 )
