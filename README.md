@@ -84,6 +84,9 @@ ASCII format to a binary format.
 Here is the workflow I used:
 
  1. Use OpenScad to build the model. Export the model as STL.
+    * Build using F6
+    * File->Export...->Export as STL...
+
  2. Use `meshconv` to translate the file to binary.
 
      $ meshconv -c stl <STL-FILE-FROM-OpenSCAD> -o <FILENAME>
@@ -94,6 +97,11 @@ Here is the workflow I used:
  4. Assign colors.
 
  5. Export as _VRML 2.0 File (*.wrl)_
+
+ 6. The 3D model probably needs to be scaled to match the footprint. Use
+    the `kicad:Footprint Editor:Edit->Edit Properties->3D Settings`
+    dialog. For the ESP-12, the `Shape Scale` X, Y, and Z values are
+    0.393700.
 
 This repository includes all the intermediate files:
 
