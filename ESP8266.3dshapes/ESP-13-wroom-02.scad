@@ -2,14 +2,16 @@ fragments=20;
 module halfPad() {
     color("Gold", a=1) {
         difference() {
-            cube(size=[0.85,0.90,1], center=true);
-        };
+            translate([0, 0, 0.5]) {
+            		cube(size=[0.85,0.90,1], center=true);
+        		};
+			};
     };
 };
 
 module padHoles(x, y, zRot = 0) {
     rotate([0, 0, zRot]) {
-        translate([x, y, 0]) {
+        translate([x, y, 0.5]) {
             cylinder(h=2,d=0.6,center=true,$fn=fragments);
         };
     };
@@ -77,7 +79,7 @@ translate([0,0,0]) {
    difference() {
        union() {
            color("Blue", a=1) {
-               translate([0, -13, -0.5]) {
+               translate([0, -13, 0]) {
                    cube(size=[18, 20, .98], center = false);
                };
            };
@@ -87,7 +89,7 @@ translate([0,0,0]) {
    };
 
    //shield
-   translate([1.5, -12, 0.5]) {
+   translate([1.5, -12, 1]) {
 		color("Silver", a=1) {
 			cube(size=[15, 12, 1.5], center = false);
 		};

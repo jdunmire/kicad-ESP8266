@@ -25,7 +25,7 @@ F http://l0l.org.uk/2014/12/esp8266-modules-hardware-guide-gotta-catch-em-all/
 $ENDCMP
 #
 $CMP ESP-13-WROOM-02
-D ESP8622 ESP-12 module, 16 pins, 2mm, PCB antenna
+D ESP8622 ESP-13-WROOM-02 module, 18 pins, 2mm, PCB antenna
 K MODULE ESP8266 ESP-8266
 F http://l0l.org.uk/2014/12/esp8266-modules-hardware-guide-gotta-catch-em-all/
 $ENDCMP
