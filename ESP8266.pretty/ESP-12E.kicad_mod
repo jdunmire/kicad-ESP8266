@@ -42,4 +42,9 @@
   (pad 20 smd oval (at 16 4) (size 2.4 1.1) (layers F.Cu F.Paste F.Mask))
   (pad 21 smd oval (at 16 2) (size 2.4 1.1) (layers F.Cu F.Paste F.Mask))
   (pad 22 smd oval (at 16 0) (size 2.4 1.1) (layers F.Cu F.Paste F.Mask))
+  (model ${ESPLIB}/ESP8266.3dshapes/ESP-12.wrl
+    (at (xyz 0.04 0 0))
+    (scale (xyz 0.3937 0.3937 0.3937))
+    (rotate (xyz 0 0 0))
+  )
 )
