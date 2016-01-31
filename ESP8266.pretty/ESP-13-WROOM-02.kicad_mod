@@ -1,4 +1,4 @@
-(module ESP-13-WROOM-02 (layer F.Cu) (tedit 5613A4CC)
+(module ESP-13-WROOM-02 (layer F.Cu) (tedit 56AD2D87)
   (descr "Module, ESP-8266, ESP-13-WROOM-02, 18 pad, SMD")
   (tags "Module ESP-8266 ESP8266")
   (fp_text reference REF** (at -3 -5) (layer F.SilkS)
@@ -38,6 +38,7 @@
   (pad 16 smd oval (at 18 3) (size 2 0.9) (layers F.Cu F.Paste F.Mask))
   (pad 17 smd oval (at 18 1.5) (size 2 0.9) (layers F.Cu F.Paste F.Mask))
   (pad 18 smd oval (at 18 0) (size 2 0.9) (layers F.Cu F.Paste F.Mask))
+  (pad PAD smd rect (at 10.12 6.58) (size 4.3 4.3) (layers F.Cu F.Paste F.Mask))
   (model ${ESPLIB}/ESP8266.3dshapes/ESP-13-wroom-02.wrl
     (at (xyz 0 0 0))
     (scale (xyz 0.3937 0.3937 0.3937))
