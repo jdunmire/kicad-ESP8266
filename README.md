@@ -24,11 +24,23 @@ The present modules are:
               locations so the footprint was created from empirical
               measurements on the unit I have.
 
-  * ESP-12E - This is for the 22 pin variant of the ESP-12. Though all the 
+  * ESP-12E - This is for the 22 pin variant of the ESP-12. ~~Though all the 
               esp-12 signals are in the same place on ESP-12E, pin numbers
-              have changed.
+              have changed.~~ As of 2016/12/06 the pin numbers on the
+              ESP-12E have been changed to be compatible with the
+              ESP-12. If you need the old pin numbers they are still
+              available on the `oldNumbers` branch.
 
-There are 3d models for the ESP-12 and the ESP-07v2.
+  * ESP-07v2 - ESP-07 that is pin compatible with the ESP-12.
+
+  * ESP-13-WROOM-02
+
+  * There is a footprint for the ESP-06, but no supporting
+      schematic symbol.
+
+There are 3d models for the ESP-12 and the ESP-07v2. The ESP-12 model is
+used for the ESP-12E, but does not show the extra pads that are unique
+to the ESP-12E.
 
 WARNINGS
 ---------
@@ -114,7 +126,7 @@ This repository includes all the intermediate files:
 
 License
 -------
-Copyright 2015 J.Dunmire
+Copyright 2015,2016 J.Dunmire
 
 Contact: jedunmire PLUS kicad-ESP8266 AT gmail DOT com
 
