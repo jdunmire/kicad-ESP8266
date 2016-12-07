@@ -6,6 +6,12 @@ K MODULE ESP8266 ESP-8266
 F http://l0l.org.uk/2014/12/esp8266-modules-hardware-guide-gotta-catch-em-all/
 $ENDCMP
 #
+$CMP ESP-03
+D ESP8266 ESP-03 module, 14 pins, 2mm, ceramic antenna
+K MODULE ESP8266 ESP-8266
+F http://l0l.org.uk/2014/12/esp8266-modules-hardware-guide-gotta-catch-em-all/
+$ENDCMP
+#
 $CMP ESP-06
 D ESP8266, ESP-06 module, 20 pin 
 K MODULE  ESP8266  ESP-8266
