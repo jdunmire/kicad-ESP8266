@@ -13,9 +13,9 @@ F http://l0l.org.uk/2014/12/esp8266-modules-hardware-guide-gotta-catch-em-all/
 $ENDCMP
 #
 $CMP ESP-06
-D ESP8266, ESP-06 module, 20 pin 
+D ESP8266, ESP-06 module, 20 pin
 K MODULE  ESP8266  ESP-8266
-F http://l0l.org.uk/2014/12/esp8266-modules-hardware-guide-gotta-catch-em-all/
+F http://www.esp8266.com/viewtopic.php?f=6&t=9586
 $ENDCMP
 #
 $CMP ESP-07v2
