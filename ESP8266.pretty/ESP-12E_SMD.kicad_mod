@@ -38,7 +38,7 @@
   (pad 7 smd rect (at 0 12) (size 2.5 1.1) (drill (offset -0.7 0)) (layers F.Cu F.Paste F.Mask))
   (pad 8 smd rect (at 0 14) (size 2.5 1.1) (drill (offset -0.7 0)) (layers F.Cu F.Paste F.Mask))
   (pad 15 smd rect (at 14 14) (size 2.5 1.1) (drill (offset 0.7 0)) (layers F.Cu F.Paste F.Mask))
-  (pad 16 smd rect (at 14 12) (size 2.5 1.1) (drill (offset 0.6 0)) (layers F.Cu F.Paste F.Mask))
+  (pad 16 smd rect (at 14 12) (size 2.5 1.1) (drill (offset 0.7 0)) (layers F.Cu F.Paste F.Mask))
   (pad 17 smd rect (at 14 10) (size 2.5 1.1) (drill (offset 0.7 0)) (layers F.Cu F.Paste F.Mask))
   (pad 18 smd rect (at 14 8) (size 2.5 1.1) (drill (offset 0.7 0)) (layers F.Cu F.Paste F.Mask))
   (pad 19 smd rect (at 14 6) (size 2.5 1.1) (drill (offset 0.7 0)) (layers F.Cu F.Paste F.Mask))
