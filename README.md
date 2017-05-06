@@ -38,9 +38,7 @@ The present modules are:
   * There is a footprint for the ESP-06, but no supporting
       schematic symbol.
 
-There are 3d models for the ESP-12 and the ESP-07v2. The ESP-12 model is
-used for the ESP-12E, but does not show the extra pads that are unique
-to the ESP-12E.
+There are 3d models for the ESP-07v2, ESP-13, ESP-12 and ESP-12E.
 
 WARNINGS
 ---------
@@ -90,7 +88,7 @@ The 3D models were built using [OpenSCAD](http://www.openscad.org/) and
 then colored in [Wings3D](http://www.wings3d.com/) to produce the VRML
 (`.wrl`) format for KiCAD. Wings3D requires a binary STEP format, but
 OpenSCAD writes an ASCII version.
-[meshconv](http://www.cs.princeton.edu/~min/meshconv/) will convert the
+[meshconv](http://www.patrickmin.com/meshconv/) will convert the
 ASCII format to a binary format.
 
 Here is the workflow I used:
@@ -101,7 +99,7 @@ Here is the workflow I used:
 
  2. Use `meshconv` to translate the file to binary.
 
-     $ meshconv -c stl <STL-FILE-FROM-OpenSCAD> -o <FILENAME>
+        $ meshconv -c stl <STL-FILE-FROM-OpenSCAD> -o <FILENAME>
 
  3. Now open Wings3d and import the the `FILENAME.stl` as a
  _StereoLithography Binary File (*.stl)_.
