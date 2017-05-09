@@ -51,7 +51,7 @@
   (pad 20 thru_hole oval (at 7.99 15 90) (size 2.5 1.1) (drill 0.65 (offset -0.7 0)) (layers *.Cu *.Mask F.SilkS))
   (pad 21 thru_hole oval (at 9.99 15 90) (size 2.5 1.1) (drill 0.65 (offset -0.7 0)) (layers *.Cu *.Mask F.SilkS))
   (pad 22 thru_hole oval (at 11.99 15 90) (size 2.5 1.1) (drill 0.65 (offset -0.7 0)) (layers *.Cu *.Mask F.SilkS))
-  (model ${ESPLIB}/ESP8266.3dshapes/ESP-12.wrl
+  (model ${ESPLIB}/ESP8266.3dshapes/ESP-12E.wrl
     (at (xyz 0 0 0))
     (scale (xyz 0.3937 0.3937 0.3937))
     (rotate (xyz 0 0 0))
