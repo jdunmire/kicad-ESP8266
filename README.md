@@ -62,7 +62,7 @@ Use
 
         mkdir -p ~/kicad/libraries/
         cd ~/kicad/libraries/
-        git clone 
+        git clone https://github.com/jdunmire/kicad-ESP8266
 
  2. Add `ESP8266.lib` to the Component Libraries:
 
