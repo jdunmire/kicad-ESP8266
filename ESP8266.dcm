@@ -24,6 +24,12 @@ K MODULE ESP8266 ESP-8266
 F https://www.tinyosshop.com/datasheet/ESP-07S_User_Manual.pdf
 $ENDCMP
 #
+$CMP ESP-07v1
+D ESP8266 ESP-07 v1.0 module, 16 pins, 2mm, ceramic antenna, IPX antenna connector
+K MODULE ESP8266 ESP-8266
+F http://l0l.org.uk/2014/12/esp8266-modules-hardware-guide-gotta-catch-em-all/
+$ENDCMP
+#
 $CMP ESP-07v2
 D ESP8266, ESP-07v2 module, 16 pin, 2mm, ceramic antenna
 K MODULE  ESP8266  ESP-8266
